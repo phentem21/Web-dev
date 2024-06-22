@@ -1,38 +1,38 @@
-// function eventFunction(){
-//     console.log('I have clicked on the document ');
-// }
+function eventFunction(){
+    console.log('I have clicked on the document ');
+}
 
-// document.addEventListener('click',eventFunction);  
+document.addEventListener('click',eventFunction);  
 
-// const content = document.querySelector('#wrapper');
+const content = document.querySelector('#wrapper');
 
-// content.addEventListener('click',function(event){
-//     console.log(event);
-// })
+content.addEventListener('click',function(event){
+    console.log(event);
+})
 
-// let links = document.querySelectorAll('a');
-// let thirdLink = links[2];
+let links = document.querySelectorAll('a');
+let thirdLink = links[2];
 
-// thirdLink.addEventListener('click',function(event){
-//     event.preventDefault();
-//     console.log('maza aaya aacha laga');
-// })
+thirdLink.addEventListener('click',function(event){
+    event.preventDefault();
+    console.log('maza aaya aacha laga');
+})
 
-// let myDiv = document.createElement('div');
+let myDiv = document.createElement('div');
 
-// function paraStatus(event) {
-//     console.log('Para' + event.target.textContent);
-// }
+function paraStatus(event) {
+    console.log('Para' + event.target.textContent);
+}
 
-// myDiv.addEventListener('click', paraStatus);
+myDiv.addEventListener('click', paraStatus);
 
-// for(let i=1;i<=100;i++) {
-//     let newElement = document.createElement('p');
-//     newElement.textContent = 'This is a para ' + i;
+for(let i=1;i<=100;i++) {
+    let newElement = document.createElement('p');
+    newElement.textContent = 'This is a para ' + i;
 
-//     myDiv.appendChild(newElement);
-// }
-// document.body.appendChild(myDiv);
+    myDiv.appendChild(newElement);
+}
+document.body.appendChild(myDiv);
 
 let element = document.querySelector('#wrapper');
 element.addEventListener('click',function(event){
